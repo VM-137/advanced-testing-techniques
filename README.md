@@ -1,5 +1,5 @@
-# advanced-testing-techniques
-This is a repo for doing a simple example of testing
+# Testing Techniques
+This is a repo for doing a simple example of testing python code
 
 
 ## Setup Project
