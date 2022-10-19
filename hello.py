@@ -3,6 +3,7 @@ def addthis(x,y):
     print(f"This is x: {x} and the x-type is {type(x)}")
     print(f"This is y: {y} and the y-type is {type(y)}")
     try:
+        print( f"Correct type and execution")
         result = x + y
     except TypeError:
         print(f"The wrong type passed")

@@ -1,5 +1,5 @@
 # advanced-testing-techniques
-This is a repo for doing advanced testing
+This is a repo for doing a simple example of testing
 
 
 ## Setup Project
@@ -48,3 +48,30 @@ flask
  * Print
  * pdb
  * Testing
+
+#### Example
+1. 'hello.py'
+```python
+def addthis(x,y):
+    # We can use pdb if can't figure out what happens, which is a great tool
+    # that allow us to run the code line by line and more 
+    import pdb;pdb.set_trace()
+    
+    # We can use print statements to check variables type and values
+    print(f"This is x: {x} and the x-type is {type(x)}")
+    print(f"This is y: {y} and the y-type is {type(y)}")
+    
+    # We can use try-except block to check what happens
+    
+    try:
+        print( f"Correct type and execution")
+        result = x + y
+    except TypeError:
+        print(f"The wrong type passed")
+        result = int(x) + int(y)
+        
+    print(f"This is the result {result}")
+    return result
+
+print(addthis("one",2))
+```
